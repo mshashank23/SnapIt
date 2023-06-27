@@ -1,0 +1,46 @@
+body{
+  background: #F0F2F5 !important;
+  font-family: 'Muli', sans-serif;
+  
+}
+h4{
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+h6{
+padding-bottom: 24px;
+font-weight: 400;
+}
+.card card-body{
+padding: 48px;
+}
+
+a{
+  color: #333;
+}
+a:hover{
+  color: #23cfcf;
+  text-decoration: none;
+}
+.submitForm{
+  padding: 48px;
+}
+
+.form-control:focus {
+
+    color: #000;
+    background-color: #fff;
+    border:2px solid #23cfcf;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn{
+  background: #13C2C2;
+  border: #13C2C2;
+}
+.btn:hover {
+  background: #23cfcf;
+  border: #23cfcf;
+}
