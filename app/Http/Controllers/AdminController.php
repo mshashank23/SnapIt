@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Validator, Auth, Alert;
+use Illuminate\Support\Facades\DB;
 use App\Models\User;
 use App\Models\Opportunity;
 
@@ -90,7 +91,30 @@ class AdminController extends Controller
     }
 
     function opportunity(){
-        $data = Opportunity::all();
+        $data = DB::table('opportunities')
+            ->join('users', 'opportunities.userId', '=', 'users.id')
+            ->select('opportunities.*', 'users.name')
+            ->get();
         return view('admin.opportunity', ['opportunities'=>$data]);
+    }
+
+    function reports(){
+        $result = DB::select("SELECT COUNT(*) as total, stages FROM opportunities,sales_stages WHERE opportunities.salesid=sales_stages.salesid GROUP BY opportunities.salesid, stages");
+        
+        $result2 = DB::select("SELECT COUNT(*) as total, name FROM opportunities,users WHERE opportunities.userId=users.id GROUP BY userId,name");
+
+        $chartdata = "";
+        $chartdata2= "";
+        foreach($result as $list){
+            $chartdata.="['".$list->stages."', ".$list->total."],";
+        }
+
+        foreach($result2 as $list){
+            $chartdata2.="['".$list->name."', ".$list->total."],";
+        }
+        $arr['chartdata']=rtrim($chartdata, ",");
+        $arr['chartdata2']=rtrim($chartdata2, ",");
+        
+        return view('admin.reports',$arr);
     }
 }

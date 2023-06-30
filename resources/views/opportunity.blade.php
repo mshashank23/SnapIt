@@ -15,7 +15,7 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-	<title>User Management | SnapIt</title>
+	<title>Add Opportunity | SnapIt</title>
   	<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
   	<script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
 	<link href="css/app.css" rel="stylesheet">

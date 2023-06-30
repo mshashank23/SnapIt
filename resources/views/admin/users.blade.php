@@ -43,7 +43,7 @@
 
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="{{route('admin.opportunity')}}">
-						<i class="align-middle" data-feather="square"></i> <span class="align-middle">Oppurtunity</span>
+						<i class="align-middle" data-feather="square"></i> <span class="align-middle">Opportunity</span>
 						</a>
 					</li>
 

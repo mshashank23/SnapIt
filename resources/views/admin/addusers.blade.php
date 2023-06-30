@@ -15,7 +15,7 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-	<title>User Management | SnapIt</title>
+	<title>Add User | SnapIt</title>
   	<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
   	<script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
 	<link href="css/app.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="{{route('admin.opportunity')}}">
-			<i class="align-middle" data-feather="square"></i> <span class="align-middle">Oppurtunity</span>
+			<i class="align-middle" data-feather="square"></i> <span class="align-middle">Opportunity</span>
 			</a>
 					</li>
 

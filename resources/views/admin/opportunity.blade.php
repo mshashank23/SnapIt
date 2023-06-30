@@ -15,7 +15,7 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-	<title>Admin Home | SnapIt</title>
+	<title>Opportunity | SnapIt</title>
   	<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
   	<script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
 	<link href="css/app.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
 						<li class="sidebar-item active">
 							<a class="sidebar-link" href="{{route('admin.opportunity')}}">
-				<i class="align-middle" data-feather="square"></i> <span class="align-middle">Oppurtunity</span>
+				<i class="align-middle" data-feather="square"></i> <span class="align-middle">Opportunity</span>
 				</a>
 						</li>
 
@@ -107,7 +107,7 @@
 						<div class="card flex-fill">
 							<div class="card-header">
 								<div class="row">
-									<div class="col-sm-12"><h2>Latest <b>Oppourtunities</b></h2></div>
+									<div class="col-sm-12"><h2>Latest <b>Opportunities</b></h2></div>
 									
 								</div>
 							</div>
@@ -124,31 +124,31 @@
 												<th class="d-none d-xl-table-cell">Contact Designation</th>
 												<th class="d-none d-xl-table-cell">Sales Activity</th>
 												<th class="d-none d-xl-table-cell">Activity Forecasting</th>
-												<th class="d-none d-xl-table-cell">Remarks</th>
+												
 												<th class="d-none d-xl-table-cell">Expected Revenue</th>
+												<th class="d-none d-xl-table-cell">Sales User</th>
 											</tr>
 										</thead>
 										<tbody>  
 											@foreach($opportunities as $opportunity)
 										<tr>
-											<td>{{$opportunity['date']}}</td>
-											<td>{{$opportunity['contact_person_name']}}</td>
-											<td>{{$opportunity['contact_person_email']}}</td>
-											<td>{{$opportunity['contact_person_number']}}</td>
-											<td>{{$opportunity['company_name']}}</td>
-											<td>{{$opportunity['contact_designation']}}</td>
-											<td>{{$opportunity['sales_activity']}}</td>
-											<td>{{$opportunity['activity_forecasting']}}</td>
-											<td>{{$opportunity['remarks']}}</td>
-											<td>{{$opportunity['expected_revenue']}}</td>
+											<td>{{$opportunity->date}}</td>
+											<td>{{$opportunity->contact_person_name}}</td>
+											<td>{{$opportunity->contact_person_email}}</td>
+											<td>{{$opportunity->contact_person_number}}</td>
+											<td>{{$opportunity->company_name}}</td>
+											<td>{{$opportunity->contact_designation}}</td>
+											<td>{{$opportunity->sales_activity}}</td>
+											<td>{{$opportunity->activity_forecasting}}</td>
 											
+											<td>{{$opportunity->expected_revenue}}</td>
+											<td>{{$opportunity->name}}</td>
 											</tr>
 											@endforeach
 										</tbody>
 									</table>
 								</div>
 							</div>
-					
 						</div>
 					</div>
 				</div>

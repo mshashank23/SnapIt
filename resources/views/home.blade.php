@@ -15,7 +15,7 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-	<title>SnapIt - CRM Home Page</title>
+	<title>Dashboard | SnapIt</title>
   	<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
   	<script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
 	<link href="css/app.css" rel="stylesheet">
@@ -138,7 +138,7 @@
 							<div class="card flex-fill">
 								<div class="card-header">
 									<div class="row">
-										<div class="col-sm-10"><h2>Latest <b>Oppourtunities</b></h2></div>
+										<div class="col-sm-10"><h2>Latest <b>Opportunities</b></h2></div>
 										<div class="col-sm-2">
 											<a href="{{route('opportunity')}}"><button type="button" class="btn btn-primary add-new" style="float:right"><i class="fa fa-plus"></i> Add New</button></a>
 										</div>
