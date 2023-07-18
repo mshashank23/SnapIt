@@ -61,28 +61,23 @@
 							  <div class="card text-black" style="border-radius: 25px;">
 								<div class="card-body p-md-5">
 								  <div class="row justify-content-center">
-									<div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+									<div class="col-md-12 col-lg-12 col-xl-12 order-2 order-lg-1">
 					  
 									  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Add Opportunity</p>
 					  
-
 									  <form class="mx-1 mx-md-4" action="{{url('/')}}/opportunity" method="POST">
 										@csrf
-										<div class="d-flex flex-row align-items-center mb-4">
+										<div class="d-flex col-lg-12 flex-row align-items-center mb-4">
 										  <i class="fas fa-user fa-lg me-3 fa-fw"></i>
 										  <div class="form-outline flex-fill mb-0">
 											<input type="date" name="date" id="form3Example1c" class="form-control" placeholder="Date"/>
 										  </div>
-										</div>
 					  
-										<div class="d-flex flex-row align-items-center mb-4">
 										  <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 										  <div class="form-outline flex-fill mb-0">
 											<input type="text" name="contact_person" id="form3Example3c" class="form-control" placeholder="Contact Person" />
 										  </div>
-										</div>
 					  
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="email" name="contact_person_email" id="form3Example3c" class="form-control" placeholder="Contact Person Email" />
@@ -94,16 +89,12 @@
 											<div class="form-outline flex-fill mb-0">
 											  <input type="number" name="contact_person_number" id="form3Example3c" class="form-control" placeholder="Contact Person Number" />
 											</div>
-										</div>
-
-										<div class="d-flex flex-row align-items-center mb-4">
+										
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="contact_designation" id="form3Example3c" class="form-control" placeholder="Contact Person Designation" />
 											</div>
-										</div>
 										  
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="company_name" id="form3Example3c" class="form-control" placeholder="Company Name" />
@@ -115,9 +106,7 @@
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="sales_activity" id="form3Example3c" class="form-control" placeholder="Sales Activity" />
 											</div>
-										</div>
-
-										<div class="d-flex flex-row align-items-center mb-4">
+										
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="activity_forecasting" id="form3Example3c" class="form-control" placeholder="Activity Forecasting" />
@@ -133,9 +122,8 @@
 													@endforeach
 											  </select>
 											</div>
-										</div>
+										
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <select name='product' class="form-select">
@@ -155,9 +143,8 @@
 													@endforeach
 											  </select>
 											</div>
-										</div>
+										
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <select name='lead' class="form-select">
@@ -173,9 +160,7 @@
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="remarks" id="form3Example3c" class="form-control" placeholder="Remarks" />
 											</div>
-										</div>
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="number" name="revenue" id="form3Example3c" class="form-control" placeholder="Expected Revenue" />
@@ -183,16 +168,16 @@
 										</div>
 
 										<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-										  <input type="submit" name='Register' value="Add" class="btn btn-primary btn-lg"></button>
+										  <input type="submit" name='Register' value="Add Opportunity" class="btn btn-primary btn-lg"></button>
 										</div>
 					  
 									  </form>
 					  
 									</div>
-									<div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+									{{-- <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 									  <img src="https://img.freepik.com/free-vector/people-analyzing-growth-charts-illustrated_23-2148865274.jpg?w=1060&t=st=1687758255~exp=1687758855~hmac=da847660b5d4b49522179d11d1b5da84cca86c4db22a0c573be91192cd360cee"
 										class="img-fluid" alt="Sample image">
-									</div>
+									</div> --}}
 								  </div>
 								</div>
 							  </div>

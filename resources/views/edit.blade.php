@@ -61,7 +61,7 @@
 							  <div class="card text-black" style="border-radius: 25px;">
 								<div class="card-body p-md-5">
 								  <div class="row justify-content-center">
-									<div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+									<div class="col-md-12 col-lg-12 col-xl-12 order-2 order-lg-1">
 					  
 									  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Update Opportunity</p>
 					  
@@ -74,16 +74,12 @@
 										  <div class="form-outline flex-fill mb-0">
 											<input type="date" value={{$opportunity->date}} name="date" id="form3Example1c" class="form-control" placeholder="Date"/>
 										  </div>
-										</div>
-					  
-										<div class="d-flex flex-row align-items-center mb-4">
+										
 										  <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 										  <div class="form-outline flex-fill mb-0">
 											<input type="text" name="contact_person" value="{{$opportunity->contact_person_name}}" id="form3Example3c" class="form-control" placeholder="Contact Person" />
 										  </div>
-										</div>
-					  
-										<div class="d-flex flex-row align-items-center mb-4">
+					
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="email" name="contact_person_email" value={{$opportunity->contact_person_email}} id="form3Example3c" class="form-control" placeholder="Contact Person Email" />
@@ -95,16 +91,12 @@
 											<div class="form-outline flex-fill mb-0">
 											  <input type="number" name="contact_person_number" value={{$opportunity->contact_person_number}} id="form3Example3c" class="form-control" placeholder="Contact Person Number" />
 											</div>
-										</div>
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="contact_designation" value={{$opportunity->contact_designation}} id="form3Example3c" class="form-control" placeholder="Contact Person Designation" />
 											</div>
-										</div>
 										  
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="company_name" value={{$opportunity->company_name}} id="form3Example3c" class="form-control" placeholder="Company Name" />
@@ -116,9 +108,7 @@
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="sales_activity" value="{{$opportunity->sales_activity}}" id="form3Example3c" class="form-control" placeholder="Sales Activity" />
 											</div>
-										</div>
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" name="activity_forecasting" value="{{$opportunity->activity_forecasting}}" id="form3Example3c" class="form-control" placeholder="Activity Forecasting" />
@@ -134,9 +124,7 @@
 													@endforeach
 											  </select>
 											</div>
-										</div>
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <select name='product' class="form-select">
@@ -156,9 +144,7 @@
 													@endforeach
 											  </select>
 											</div>
-										</div>
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <select name='lead' class="form-select">
@@ -174,9 +160,7 @@
 											<div class="form-outline flex-fill mb-0">
 											  <input type="text" value="{{$opportunity->remarks}}" name="remarks" id="form3Example3c" class="form-control" placeholder="Remarks" />
 											</div>
-										</div>
 
-										<div class="d-flex flex-row align-items-center mb-4">
 											<i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
 											<div class="form-outline flex-fill mb-0">
 											  <input type="number" value={{$opportunity->expected_revenue}} name="revenue" id="form3Example3c" class="form-control" placeholder="Expected Revenue" />
@@ -184,7 +168,7 @@
 										</div>
 
 										<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-										  <input type="submit" name='Register' value="Add" class="btn btn-primary btn-lg"></button>
+										  <input type="submit" name='Register' value="Update Opportunity" class="btn btn-primary btn-lg"></button>
 										</div>
 					  
 									  </form>
